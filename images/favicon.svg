@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DS">
+  <style>
+    :root {
+      color-scheme: light dark;
+    }
+
+    .mark-text {
+      fill: #222;
+      font-family: Lato, Arial, sans-serif;
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .mark-text {
+        fill: #eee;
+      }
+    }
+  </style>
+  <text class="mark-text" x="32" y="42" text-anchor="middle">DS</text>
+</svg>

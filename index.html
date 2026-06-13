@@ -1,79 +1,166 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="David Schnurr">
+  <meta name="description" content="David Schnurr is an MSc Computer Science student at ETH Zurich interested in tabular machine learning, time series forecasting, distribution shifts, software engineering, and finance.">
+  <meta name="color-scheme" content="light dark">
 
   <title>David Schnurr</title>
-  
-  <meta name="author" content="David Schnurr">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <!-- <link rel="icon" type="image/png" href="images/"> -->
+
+  <link rel="canonical" href="https://schnurrd.com/">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="David Schnurr">
+  <meta property="og:description" content="MSc Computer Science student at ETH Zurich working on tabular machine learning, time series forecasting, and distribution shifts.">
+  <meta property="og:url" content="https://schnurrd.com/">
+  <meta property="og:image" content="https://schnurrd.com/images/david-640.jpeg">
+  <meta property="og:image:alt" content="Portrait of David Schnurr">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="David Schnurr">
+  <meta name="twitter:description" content="MSc Computer Science student at ETH Zurich working on tabular machine learning, time series forecasting, and distribution shifts.">
+  <meta name="twitter:image" content="https://schnurrd.com/images/david-640.jpeg">
+
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem('theme');
+        if (theme === 'dark' || theme === 'light') {
+          document.documentElement.dataset.theme = theme;
+        }
+      } catch (error) {
+        document.documentElement.removeAttribute('data-theme');
+      }
+    }());
+  </script>
+  <link rel="stylesheet" href="stylesheet.css?v=20260613-8">
 </head>
 
-<script type="text/javascript">
-function toggle_vis(id) {
-    var e = document.getElementById(id);
-    if (e.style.display == 'none')
-    e.style.display = 'inline';
-    else
-    e.style.display = 'none';
-}
-</script>
-
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>David Schnurr</name>
-              </p>
-              <p>
-                I am currently pursuing a Master of Science in Computer Science at <a href="https://ethz.ch/">ETH Zurich</a>, specializing in Machine Intelligence with a Minor in Data Management. My main research interests lie in tabular machine learning, time series forecasting, and addressing (temporal) distribution shifts. I also have a strong interest in Software Engineering and Finance.
-              <p>
-                Prior to joining ETH, I completed my Bachelor of Science in Computer Science at the <a href="https://www.uni-freiburg.de/">University of Freiburg</a>, where I graduated with a grade average of 1.1 (top 2%) and a focus on Machine Learning complemented by Algorithm Development and Analysis.
-              </p>
-              <p>
-                I have gained professional experience as a Software Engineering Intern at <a href="https://www.citadel.com/">Citadel</a> in the Central OTC team, where I contributed to core production systems in C++ and Python. I also completed a 7-month internship at <a href="https://www.rheinmetall.com/">Rheinmetall Air Defence AG</a>, where I contributed to improving a real-time computer vision pipeline. This role enabled me to apply my deep learning and software engineering skills to optimize latency and accuracy while improving the system's robustness. I also led the integration of our pipeline within other systems, collaborating closely with multiple departments.              </p>
-              <p>
-                Additionally, I worked as a research assistant at the <a href="https://ml.informatik.uni-freiburg.de/">Machine Learning Lab</a> of the University of Freiburg. There, I enhanced the TabPFN model by implementing techniques such as comprehensive missing value generation and model fine-tuning, resulting in improved benchmark performance.
-              </p>
-              <p style="text-align:center">
-                <a href="mailto:contact.schnurrd@gmail.com">Email</a> &nbsp/&nbsp
-                <!--<a href="data/cv_david_schnurr.pdf">CV</a> &nbsp/&nbsp -->
-                <a href="https://www.linkedin.com/in/david-schnurr/">LinkedIn</a> &nbsp/&nbsp
-                <a href="https://scholar.google.de/citations?user=T3gAnpMAAAAJ&hl=de&authuser=1">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://github.com/schnurrd">Github</a> 
-              </p>
-            </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/david.jpeg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/david.jpeg" class="hoverZoomLink"></a>
-            </td>
-          </tr>
-        </tbody></table>
-      
-        <tr>
-          <td style="padding:20px;width:100%;vertical-align:middle">
-              <h2>Publications</h2>
-              <hr>
-              
-              <strong><span class="papertitle">Drift-Resilient TabPFN: In-Context Learning Temporal Distribution Shifts on Tabular Data</span></strong>
-              <br>
-              Kai Helli<sup>*</sup>, 
-              David Schnurr<sup>*</sup>, 
-              Noah Hollmann, Samuel Müller, 
-              Frank Hutter;  <sup>*</sup> Equal contribution
-              <br>
-              <em>NeurIPS 2024 (Main Track) </em>; 
-              <em>TRL @ NeurIPS 2024 </em>; 
-              <em>AutoML Conference 2024 (Workshop Track)</em>
-          </td>
-        </tr>    
-      </td>
-    </tr>
-  </table>
-</body>
+  <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode" aria-pressed="false">
+    <svg class="theme-icon theme-icon-sun" aria-hidden="true" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="4"></circle>
+      <path d="M12 2v2"></path>
+      <path d="M12 20v2"></path>
+      <path d="m4.93 4.93 1.41 1.41"></path>
+      <path d="m17.66 17.66 1.41 1.41"></path>
+      <path d="M2 12h2"></path>
+      <path d="M20 12h2"></path>
+      <path d="m6.34 17.66-1.41 1.41"></path>
+      <path d="m19.07 4.93-1.41 1.41"></path>
+    </svg>
+    <svg class="theme-icon theme-icon-moon" aria-hidden="true" viewBox="0 0 24 24">
+      <path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a7 7 0 1 0 11 11Z"></path>
+    </svg>
+  </button>
 
+  <main class="page-shell">
+    <header class="profile" aria-labelledby="site-title">
+      <h1 id="site-title">David Schnurr</h1>
+
+      <div class="profile-body">
+        <div class="profile-copy">
+          <p>
+            I am currently pursuing a Master of Science in Computer Science at <a href="https://ethz.ch/">ETH Zurich</a>, specializing in Machine Intelligence with a Minor in Data Management. My main research interests lie in tabular machine learning, time series forecasting, and addressing (temporal) distribution shifts. I also have a strong interest in Software Engineering and Finance.
+          </p>
+          <p>
+            Prior to joining ETH, I completed my Bachelor of Science in Computer Science at the <a href="https://www.uni-freiburg.de/">University of Freiburg</a>, where I graduated with a grade average of 1.1 (top 2%) and a focus on Machine Learning complemented by Algorithm Development and Analysis.
+          </p>
+          <p>
+            I have gained professional experience as a Software Engineering Intern at <a href="https://www.citadel.com/">Citadel</a> in the Central OTC team, where I contributed to core production systems in C++ and Python. I also completed a 7-month internship at <a href="https://www.rheinmetall.com/">Rheinmetall Air Defence AG</a>, where I contributed to improving a real-time computer vision pipeline. This role enabled me to apply my deep learning and software engineering skills to optimize latency and accuracy while improving the system's robustness. I also led the integration of our pipeline within other systems, collaborating closely with multiple departments.
+          </p>
+          <p>
+            Additionally, I worked as a research assistant at the <a href="https://ml.informatik.uni-freiburg.de/">Machine Learning Lab</a> of the University of Freiburg. There, I enhanced the TabPFN model by implementing techniques such as comprehensive missing value generation and model fine-tuning, resulting in improved benchmark performance.
+          </p>
+
+          <nav class="profile-links" aria-label="Profile links">
+            <a href="mailto:contact.schnurrd@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/david-schnurr/">LinkedIn</a>
+            <a href="https://scholar.google.de/citations?user=T3gAnpMAAAAJ&amp;hl=de&amp;authuser=1">Google Scholar</a>
+            <a href="https://github.com/schnurrd">GitHub</a>
+          </nav>
+        </div>
+
+        <figure class="profile-photo">
+          <a href="images/david.jpeg" aria-label="Open full-size portrait of David Schnurr">
+            <picture>
+              <source srcset="images/david-640.webp 480w, images/david-960.webp 720w" sizes="(max-width: 420px) 46vw, (max-width: 700px) 42vw, 250px" type="image/webp">
+              <img src="images/david-960.jpeg" srcset="images/david-640.jpeg 480w, images/david-960.jpeg 720w" sizes="(max-width: 420px) 46vw, (max-width: 700px) 42vw, 250px" width="720" height="960" alt="Portrait of David Schnurr" decoding="async" fetchpriority="high">
+            </picture>
+          </a>
+        </figure>
+      </div>
+    </header>
+
+    <section class="publications" aria-labelledby="publications-title">
+      <h2 id="publications-title">Publications</h2>
+
+      <article class="publication">
+        <h3 class="papertitle">Drift-Resilient TabPFN: In-Context Learning Temporal Distribution Shifts on Tabular Data</h3>
+        <p class="publication-authors">
+          Kai Helli<sup>*</sup>, David Schnurr<sup>*</sup>, Noah Hollmann, Samuel Müller, Frank Hutter; <sup>*</sup> Equal contribution
+        </p>
+        <p class="publication-venues">
+          <em>NeurIPS 2024 (Main Track)</em>; <em>TRL @ NeurIPS 2024</em>; <em>AutoML Conference 2024 (Workshop Track)</em>
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var toggle = document.querySelector('[data-theme-toggle]');
+      var media = window.matchMedia('(prefers-color-scheme: dark)');
+
+      function savedTheme() {
+        try {
+          var theme = localStorage.getItem('theme');
+          return theme === 'dark' || theme === 'light' ? theme : null;
+        } catch (error) {
+          return null;
+        }
+      }
+
+      function activeTheme() {
+        return root.dataset.theme || (media.matches ? 'dark' : 'light');
+      }
+
+      function updateToggle() {
+        var isDark = activeTheme() === 'dark';
+        toggle.setAttribute('aria-pressed', String(isDark));
+        toggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+      }
+
+      toggle.addEventListener('click', function () {
+        var nextTheme = activeTheme() === 'dark' ? 'light' : 'dark';
+        root.dataset.theme = nextTheme;
+        try {
+          localStorage.setItem('theme', nextTheme);
+        } catch (error) {
+          root.dataset.theme = nextTheme;
+        }
+        updateToggle();
+      });
+
+      function syncSystemTheme() {
+        if (!savedTheme()) {
+          root.removeAttribute('data-theme');
+          updateToggle();
+        }
+      }
+
+      if (media.addEventListener) {
+        media.addEventListener('change', syncSystemTheme);
+      } else if (media.addListener) {
+        media.addListener(syncSystemTheme);
+      }
+
+      updateToggle();
+    }());
+  </script>
+</body>
 </html>
