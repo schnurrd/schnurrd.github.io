@@ -253,8 +253,11 @@ h1 {
 
 .profile-links a:not(:last-child)::after {
   content: "/";
+  display: inline-block;
   margin: 0 0.55em;
   color: var(--muted);
+  text-decoration: none;
+  pointer-events: none;
 }
 
 .profile-photo {
