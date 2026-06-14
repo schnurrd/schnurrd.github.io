@@ -251,13 +251,9 @@ h1 {
   align-items: center;
 }
 
-.profile-links a:not(:last-child)::after {
-  content: "/";
-  display: inline-block;
+.profile-link-separator {
   margin: 0 0.55em;
   color: var(--muted);
-  text-decoration: none;
-  pointer-events: none;
 }
 
 .profile-photo {
